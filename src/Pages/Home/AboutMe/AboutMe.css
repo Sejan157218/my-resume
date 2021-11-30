@@ -1,0 +1,23 @@
+.about-container{
+    background-color: #191919;
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 5rem;
+}
+.about-img{
+background-color: #1f1f1f;
+width: 100%;
+}
+.about-text h1{
+    font-size: 60px;
+   
+}
+.about-text p{
+    color: #d1d1d1;
+}
+.about-text span{
+    font-size: 20px;
+}
+.about-text h6{
+    color: #d1d1d1;
+}

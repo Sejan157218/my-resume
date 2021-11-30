@@ -10,11 +10,11 @@ import resume from './sejan-web-resume_2.pdf';
 const Banner = () => {
 
     return (
-        <div className="banner-container">
-            <Container>
+        <div className="banner-container ">
+            <Container className="pb-5">
             <Row>
             <Col sm={12} md={6} className="my-img-div"><img className="my-img" src={image} alt="myImage" /></Col>
-            <Col  sm={12} md={6} className="d-flex align-items-center banner-content pt-5"> 
+            <Col  sm={12} md={6} className="d-flex align-items-center banner-content pt-5 ps-3"> 
             <div>
               <h5>WELCOME TO MY WORLD</h5>
             <h1>Hi, I’m Sejan Mahmud</h1>
