@@ -12,4 +12,25 @@
   }
   .my-img{
     height: 80vh;
+    width: 100%;
   }
+  .banner-content{
+    background-color: #151515;
+    color: #fff;
+   
+    /* color: #fe4066; */
+  }
+  .banner-button{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 25px 10px 25px;
+    fill: #000;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+}
+.banner-button:hover{
+    color: #FFF;
+    background-color: #000;
+}
