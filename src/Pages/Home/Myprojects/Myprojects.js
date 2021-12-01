@@ -1,8 +1,4 @@
 import React from 'react';
-import moment from "../../../Images/ash-moment.png";
-import heath from "../../../Images/ash-health-care.png";
-import travel from "../../../Images/ash-travel.png";
-import learning from "../../../Images/ash-learning.png";
 import "./Myprojects.css"
 import {  Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -15,7 +11,7 @@ const projects = [
     title : 'Ash Moment Count -Watch Shop',
     des: 'Responsive website with firebase authentication and different type dashboard functionality for admin and users. Admin can manage all orders, make admin, add new products and manage any products.Authorized customers can leave feedback, buy any product, and manage their ordered products.',
     tech : 'HTML5, CSS3, React Bootstrap, React.js, Node.js, Express.js, MongoDB, Firebase.',
-    img : moment,
+    img : "https://i.ibb.co/M6spYNk/ash-moment.png",
     live: "https://ash-moment-count.web.app/"
 },
   { 
@@ -23,7 +19,7 @@ const projects = [
     title : 'Ash Trevelar Paradise-Travel Agency',
     des: 'Developed a tout booking website with some tour packages at the best price.An authorized user can be booked a tour package and also cancel a package.There is a dashboard where the admin can cancel a booking and change a booking status.',
     tech : 'React.js, Node.js, Express.js, MongoDB, Firebase, HTML5, CSS3, React Bootstrap.',
-    img : travel,
+    img : "https://i.ibb.co/CM7dbF5/ash-travel.png",
     live: "https://ash-tourism.web.app/"
 },
   { 
@@ -31,7 +27,7 @@ const projects = [
     title : 'Ash Health Care -Hospital Website',
     des: 'From this website, users can get many types of treatment for their health issues.Authorized users can see service details.Users can Login or Sign up with email and password or google.',
     tech : 'Firebase, React.js, React Bootstrap, HTML5, CSS3.',
-    img : heath,
+    img : "https://i.ibb.co/vv0XCBc/ash-health-care.png",
     live: "https://ash-health-care.web.app/"
 },
   { 
@@ -39,7 +35,7 @@ const projects = [
     title : 'Ash Learning',
     des: 'From this website, users can buy a product',
     tech : 'React.js, React Bootstrap, HTML5, CSS3.',
-    img : learning,
+    img : "https://i.ibb.co/dr7tvGq/ash-learning.png",
     live: "https://ash-learning-sejan157218.netlify.app/"
 },
 ]
