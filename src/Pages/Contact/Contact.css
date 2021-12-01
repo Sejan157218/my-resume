@@ -1,0 +1,31 @@
+.contact-container{
+    background-color: #191919;
+    color: rgba(198,201,216,.75);
+}
+.contact-form-input{
+    background-color: #191919;
+    width: 100%;
+    padding: 0 20px;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    height: 50px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #657474;
+    font-size: 15px;
+    letter-spacing: .1px;
+    border: 1px solid #474747;
+}
+.send-button{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 25px 10px 25px;
+    fill: #000;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+}
