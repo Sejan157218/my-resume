@@ -1,11 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import image from "../../../Images/sejan2.png";
-import "./AboutMe.css"
+import "./AboutMe.css";
 
 const AboutMe = () => {
     return (
-        <div className="about-container">
+        <div id="about-me" className="about-container">
         <Container>
         <Row>
         <Col  sm={12} md={6} className="d-flex justify-content-center" >

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import "./Header.css";
 
 const Header = () => {
@@ -25,9 +26,10 @@ const Header = () => {
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
                         <Nav className=" header-nav">
-                            <Nav.Link className="nav-color" as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link className="nav-color" as={Link} to="/portfolio">Portfolio</Nav.Link>
-                            <Nav.Link className="nav-color" as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link className="nav-color" as={HashLink } to="/home#home">Home</Nav.Link>
+                            <Nav.Link className="nav-color" as={HashLink } to="/home#about-me">About</Nav.Link>
+                            <Nav.Link className="nav-color" as={HashLink } to="/home#my-project">Portfolio  </Nav.Link>
+                            <Nav.Link className="nav-color" as={HashLink } to="/home#home">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Text>
                 </Navbar.Collapse>

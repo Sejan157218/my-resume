@@ -6,7 +6,7 @@ import Myprojects from '../Myprojects/Myprojects';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <Header></Header>
             <Banner></Banner>
             <AboutMe></AboutMe>

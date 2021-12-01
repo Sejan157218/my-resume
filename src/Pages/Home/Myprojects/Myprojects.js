@@ -1,72 +1,85 @@
 import React from 'react';
-import {Carousel} from '3d-react-carousal';
-import image from "../../../Images/banner.jpg";
-import image2 from "../../../Images/ash-moment.png";
+import moment from "../../../Images/ash-moment.png";
+import heath from "../../../Images/ash-health-care.png";
+import travel from "../../../Images/ash-travel.png";
+import learning from "../../../Images/ash-learning.png";
 import "./Myprojects.css"
-import { Col, Container, Row } from 'react-bootstrap';
+import {  Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 // style={{height:"50%"}}
 const Myprojects = () => {
-    let slidesd = [
-       
-        <Row>
-       <div className="div-scroll">
-       <img className="project-img" src={image2} alt="myImage" />
-       </div>
-        <Col className="d-flex justify-content-center" >
-           <div className="project-text">
-             <h1>project Medddd</h1>
-             <p>Hello, I’m Sejan, .My core skill is based on javaScript and I love to do most of the things with javaScript. I am Skilled At MERN Stack with knowing some framework for the frontend and the backend.</p>
-             <h4>My Skills</h4>
-             <h6><span>Comfortable -</span> JavaScript (ES6), React JS, React Router, HTML5, CSS3, Bootstrap 5, Tailwind Css, React Bootstrap, Material UI.</h6>
-             <h6><span>Familiar -</span> Node.js, Express.js, MongoDB.</h6>
-             <h6><span>Tools -</span> Git, Github, VS Code , Chrome Dev Tools, Heroku, Netlify, Firebase.</h6>
-           </div>
-           </Col>
-        </Row>
-        
-    ,
-      
-       <Row>
-       <img className="project-img" src="https://picsum.photos/800/302/?random" alt="myImage" />
-       <Col className="d-flex justify-content-center" >
-      
-          <div className="project-text">
-            <h1>project Me</h1>
-            <p>Hello, I’m Sejan, .My core skill is based on javaScript and I love to do most of the things with javaScript. I am Skilled At MERN Stack with knowing some framework for the frontend and the backend.</p>
-            <h4>My Skills</h4>
-            <h6><span>Comfortable -</span> JavaScript (ES6), React JS, React Router, HTML5, CSS3, Bootstrap 5, Tailwind Css, React Bootstrap, Material UI.</h6>
-            <h6><span>Familiar -</span> Node.js, Express.js, MongoDB.</h6>
-            <h6><span>Tools -</span> Git, Github, VS Code , Chrome Dev Tools, Heroku, Netlify, Firebase.</h6>
-          </div>
-          </Col>
-       </Row>
-     
-   ,
-  
-   <Row>
-   <img className="project-img" src="https://picsum.photos/800/302/?random" alt="myImage" />
-   <Col className="d-flex justify-content-center" >
-  
-      <div className="project-text">
-        <h1>project Me</h1>
-        <p>Hello, I’m Sejan, .My core skill is based on javaScript and I love to do most of the things with javaScript. I am Skilled At MERN Stack with knowing some framework for the frontend and the backend.</p>
-        <h4>My Skills</h4>
-        <h6><span>Comfortable -</span> JavaScript (ES6), React JS, React Router, HTML5, CSS3, Bootstrap 5, Tailwind Css, React Bootstrap, Material UI.</h6>
-        <h6><span>Familiar -</span> Node.js, Express.js, MongoDB.</h6>
-        <h6><span>Tools -</span> Git, Github, VS Code , Chrome Dev Tools, Heroku, Netlify, Firebase.</h6>
-      </div>
-      </Col>
-
-   
-   </Row>
-  ,
-        ];
+const projects = [
+  { 
+    id:"jjjkjljla",
+    title : 'Ash Moment Count -Watch Shop',
+    des: 'Responsive website with firebase authentication and different type dashboard functionality for admin and users. Admin can manage all orders, make admin, add new products and manage any products.Authorized customers can leave feedback, buy any product, and manage their ordered products.',
+    tech : 'HTML5, CSS3, React Bootstrap, React.js, Node.js, Express.js, MongoDB, Firebase.',
+    img : moment,
+    live: "https://ash-moment-count.web.app/"
+},
+  { 
+    id:"jjjkjldfjla",
+    title : 'Ash Trevelar Paradise-Travel Agency',
+    des: 'Developed a tout booking website with some tour packages at the best price.An authorized user can be booked a tour package and also cancel a package.There is a dashboard where the admin can cancel a booking and change a booking status.',
+    tech : 'React.js, Node.js, Express.js, MongoDB, Firebase, HTML5, CSS3, React Bootstrap.',
+    img : travel,
+    live: "https://ash-tourism.web.app/"
+},
+  { 
+    id:"jjjkjljlda",
+    title : 'Ash Health Care -Hospital Website',
+    des: 'From this website, users can get many types of treatment for their health issues.Authorized users can see service details.Users can Login or Sign up with email and password or google.',
+    tech : 'Firebase, React.js, React Bootstrap, HTML5, CSS3.',
+    img : heath,
+    live: "https://ash-health-care.web.app/"
+},
+  { 
+    id:"jjjkjffgljla",
+    title : 'Ash Learning',
+    des: 'From this website, users can buy a product',
+    tech : 'React.js, React Bootstrap, HTML5, CSS3.',
+    img : learning,
+    live: "https://ash-learning-sejan157218.netlify.app/"
+},
+]
     return (
-        <div className="project-container py-5">
-            <Carousel slides={slidesd} />
-            {/* autoplay={true} interval={10000}   */}
-        </div>
+<div id="my-project" className="project-container">
+<Container>
+  <h1 className="py-5 text-center">My Recent Projects</h1>
+<Row xs={1} md={2} className="g-4">
+  {projects.map(project => (
+   <div className="">
+   <ul>
+     <li className="booking-card h-100" style={{ backgroundImage: `url(${project.img})` ,height:"100%"}}>
+       <div className="book-container">
+         <div className="content">
+         </div>
+       </div>
+       <div className="informations-container">
+         <h2 className="title">{project.title}</h2>
+         <p className="sub-title">{project.tech}</p>
+         
+         <div className="more-information">
+           <div className="info-and-date-container">
+           </div>
+           <a href={project.live} target="_blank"><button className="banner-button m-2"  download>Website Link</button></a>
+           <Link to=""><button className="banner-button"  download>Details</button></Link>
+           </div>
+           
+       </div>
+     </li>
+   </ul>
+   </div>
+   
+  ))}
+</Row>
+</Container>
+</div>
+
+
+
+
     );
 };
 
