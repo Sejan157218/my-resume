@@ -1,0 +1,11 @@
+.details-container{
+    background-color: #101010;
+    color: #fff;
+}
+.details-con{
+    padding-top: 5rem;
+}
+.details{
+    height: 80vh;
+    overflow: scroll;
+}

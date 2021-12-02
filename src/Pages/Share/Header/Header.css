@@ -29,5 +29,16 @@
     font-weight: 400;
     color: #fff!important;
 }
-
+.icon-btn{
+    border: 0;
+    width: 30px;
+    height: auto;
+    text-align: left;
+    line-height: inherit;
+    background: transparent;
+    color: #fff;
+}
+.icon-class{
+    font-size: 22px;
+}
 

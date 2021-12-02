@@ -47,20 +47,20 @@ const projects = [
   {projects.map(project => (
    <div className="">
    <ul>
-     <li className="booking-card h-100" style={{ backgroundImage: `url(${project.img})` ,height:"100%"}}>
+     <li className="booking-card h-100" style={{ backgroundImage: `url(${project?.img})` ,height:"100%"}}>
        <div className="book-container">
          <div className="content">
          </div>
        </div>
        <div className="informations-container">
-         <h2 className="title">{project.title}</h2>
-         <p className="sub-title">{project.tech}</p>
+         <h2 className="title">{project?.title}</h2>
+         <p className="sub-title">{project?.tech}</p>
          
          <div className="more-information">
            <div className="info-and-date-container">
            </div>
            <a href={project.live} target="_blank"><button className="banner-button m-2"  download>Website Link</button></a>
-           <Link to=""><button className="banner-button"  download>Details</button></Link>
+           <Link to={`details/${project.id}`}><button className="banner-button"  download>Details</button></Link>
            </div>
            
        </div>

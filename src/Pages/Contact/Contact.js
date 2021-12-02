@@ -10,7 +10,7 @@ const Contact = () => {
     const onsubmit = e => {
         e.preventDefault();
         console.log(e);
-        emailjs.sendForm('service_6pxc24k', 'template_aipscnc', e.target, 'user_icBz0f3xeREsD7tvKpmba')
+        emailjs.sendForm()
           .then((result) => {
            e.target.reset();
               setSuccess('Your Message has been successfully sent. I will contact you soon.')
