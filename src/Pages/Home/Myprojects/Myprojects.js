@@ -59,8 +59,8 @@ const projects = [
          <div className="more-information">
            <div className="info-and-date-container">
            </div>
-           <a href={project.live} target="_blank"><button className="banner-button m-2"  download>Website Link</button></a>
-           <Link to={`details/${project.id}`}><button className="banner-button"  download>Details</button></Link>
+           <a href={project.live} target="_blank"><button className="banner-button m-2" >Website Link</button></a>
+           <Link to={`/home/details/${project.id}`}><button className="banner-button" >Details</button></Link>
            </div>
            
        </div>

@@ -67,9 +67,9 @@ const Details = () => {
         </h1>
         <h6> Technology Used : {pro?.tech}</h6>
         <p style={{color:"#d1d1d1"}}>{pro?.des}</p>
-        <a href={pro?.live} target="_blank"><button className="banner-button m-2"  download>Website Link</button></a>
-        <a href={pro?.gitclient} target="_blank"><button className="banner-button m-2"  download>Github Client</button></a>
-        <a href={pro?.gitserver} target="_blank"><button className="banner-button m-2"  download>Github Server</button></a>
+        <a href={pro?.live} target="_blank"><button className="banner-button m-2">Website Link</button></a>
+        <a href={pro?.gitclient} target="_blank"><button className="banner-button m-2">Github Client</button></a>
+        <a href={pro?.gitserver} target="_blank"><button className="banner-button m-2">Github Server</button></a>
     </Col>
   </Row>
 </Container>
